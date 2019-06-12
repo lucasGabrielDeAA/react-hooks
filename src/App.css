@@ -73,6 +73,7 @@ button {
 input[type='text'] {
   border: none;
   padding: 0 5px;
+  border-radius: 12px;
 }
 
 .bright {
