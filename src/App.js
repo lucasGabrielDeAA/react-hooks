@@ -17,8 +17,4 @@ function App() {
   );
 }
 
-App.defaultProps = {
-  name: '',
-};
-
 export default App;

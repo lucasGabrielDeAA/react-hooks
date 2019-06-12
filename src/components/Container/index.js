@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-export default function Container(props) {
+function Container(props) {
   const [todos, setTodos] = useState([]);
   const { count, click } = useSelector(state => state);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    document.title = `${props.name !== '' ? props.name : 'User'}, you have ${todos.length} todos`;
+    document.title = `${props.name}, you have ${todos.length} todos`;
   }, [todos]);
 
   const addTodo = () => {
@@ -68,3 +68,9 @@ export default function Container(props) {
     </div>
   );
 }
+
+Container.defaultProps = {
+  name: 'User',
+};
+
+export default Container;
