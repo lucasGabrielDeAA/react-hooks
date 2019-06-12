@@ -27,15 +27,21 @@
   }
 }
 
-input[type='button'] {
+button {
   border: none;
   align-content: center;
   justify-content: center;
+  border-radius: 12px;
 }
 
 .confirmButton {
   background: #61dafb;
   color: #000000;
+}
+
+.dangerButton {
+  background: #ff3300;
+  color: #ffffff;
 }
 
 .container {
@@ -67,11 +73,6 @@ input[type='button'] {
 input[type='text'] {
   border: none;
   padding: 0 5px;
-}
-
-.dangerButton {
-  background: #ff3300;
-  color: #ffffff;
 }
 
 .bright {
